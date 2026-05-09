@@ -41,7 +41,7 @@ internal sealed class CS2INV :
 		}
 	}
 
-	public async Task<List<Asset>> GetInventory(Bot bot) {
+	private static async Task<List<Asset>> GetInventory(Bot bot) {
 		List<Asset> result = [];
 
 		ASF.ArchiLogger.LogGenericInfo("Инвертарь бота " + bot.BotName);
